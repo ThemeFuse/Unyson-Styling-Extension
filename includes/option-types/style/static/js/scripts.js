@@ -1,4 +1,4 @@
-/*global googleFonts */
+/*global fw_typography_fonts */
 
 (function ($) {
 
@@ -144,8 +144,8 @@
 			$typography.on('change', 'select[data-type="family"]', fwOptionTypeStylePreview.fireTypographyChange);
 
 			var html = '';
-			if (googleFonts.hasOwnProperty(data.family)) {
-				var font = googleFonts[data.family];
+			if (fw_typography_fonts['google'].hasOwnProperty(data.family)) {
+				var font = fw_typography_fonts['google'][data.family];
 				_.each(font['variants'], function (variant) {
 					html += '<option value="' + variant + '">' + fw.capitalizeFirstLetter(variant) + '</option>';
 				});
@@ -394,9 +394,9 @@
 				color: ($element.find('input.fw-option-type-color-picker.initialized').length === 1) ? $element.find('input.fw-option-type-color-picker.initialized').iris('color') : $element.find('input.fw-option-type-color-picker').val()
 			};
 
-			if (googleFonts.hasOwnProperty(settings.family) && $.inArray(settings.family,
+			if (fw_typography_fonts['google'].hasOwnProperty(settings.family) && $.inArray(settings.family,
 					fwOptionTypeStylePreview.loadedGoogleFonts) === -1) {
-				var variants = googleFonts[settings.family]['variants'].join(',');
+				var variants = fw_typography_fonts['google'][settings.family]['variants'].join(',');
 				$('head').append('<link href="http://fonts.googleapis.com/css?family=' + settings.family.split(' ').join('+') + ':' + variants + '" rel="stylesheet" type="text/css">');
 				fwOptionTypeStylePreview.loadedGoogleFonts.push(settings.family);
 			}
