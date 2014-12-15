@@ -187,8 +187,7 @@
 						return;
 					}
 
-					// select any input with fixed size (here we chose textarea)
-					var $leftProvider = $('.fw-backend-option-type-textarea:first textarea:first');
+					var $leftProvider = $('.predefined_styles .fw-backend-option-input .fw-inner:first');
 					var $topProvider = $this.closest('.fw-postbox');
 
 					if (!$leftProvider.length || !$topProvider.length) {
