@@ -187,10 +187,19 @@
 						return;
 					}
 
-					var $leftProvider = $('.predefined_styles .fw-backend-option-input .fw-inner:first');
+					//Try selecting the option with the greatest width
+					var maxWidthSetting = 0;
+					var $leftProvider = false;
+					$('.fw-options-tabs-wrapper .fw-backend-option .fw-inner-option').each(function () {
+						if ($(this).width() > maxWidthSetting) {
+							maxWidthSetting = $(this).width();
+							$leftProvider = $(this);
+						}
+					});
+
 					var $topProvider = $this.closest('.fw-postbox');
 
-					if (!$leftProvider.length || !$topProvider.length) {
+					if (!maxWidthSetting || !$leftProvider || !$topProvider.length) {
 						return;
 					}
 
