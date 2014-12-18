@@ -154,7 +154,7 @@ class FW_Extension_Styling extends FW_Extension {
 	}
 
 	/**
-	 * Triggers when the framework settings are saved,
+	 * Triggers when the extension settings are saved,
 	 * it generates css from the styling settings and stores it
 	 * @internal
 	 */
