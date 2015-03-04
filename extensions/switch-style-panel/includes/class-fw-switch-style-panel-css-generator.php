@@ -77,7 +77,7 @@ class FW_Switch_Style_Panel_Css_Generator {
 						color: " . $options['color'] . ";
 						font-size: " . $options['size'] . "px;
 						font-family: '" . $current_family . "';"
-			        . $font_style . "" . $font_weight . "
+					. $font_style . "" . $font_weight . "
 
 					 }\n";
 		}

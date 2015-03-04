@@ -100,7 +100,7 @@ class FW_Styling_Css_Generator {
 							color: " . $settings[ $tag ]['color'] . ";
 							font-size: " . $settings[ $tag ]['size'] . "px;
 							font-family: '" . $current_family . "';"
-				        . $font_style . "" . $font_weight . "
+						. $font_style . "" . $font_weight . "
 
 						 }\n";
 			}

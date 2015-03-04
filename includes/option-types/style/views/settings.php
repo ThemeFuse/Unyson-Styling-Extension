@@ -7,12 +7,12 @@
  */
 ?>
 <div class="fw-options-tabs-wrapper fw-option-type-style-settings fw-options-tabs-first-level"
-     data-option-name="<?php echo esc_attr($id); ?>">
+	 data-option-name="<?php echo esc_attr($id); ?>">
 	<div class="fw-options-tabs-list fw-option-type-style-settings-tabs">
 		<ul>
 			<?php foreach ( $option['blocks'] as $block_id => $block ): ?>
 				<li><a href="#fw-options-tab-<?php echo esc_attr( $block_id ) ?>"
-				       class="nav-tab"><?php echo htmlspecialchars( $block['title'], ENT_COMPAT, 'UTF-8' ) ?></a></li>
+					   class="nav-tab"><?php echo htmlspecialchars( $block['title'], ENT_COMPAT, 'UTF-8' ) ?></a></li>
 			<?php endforeach; ?>
 		</ul>
 		<div class="fw-clear"></div>
@@ -22,7 +22,7 @@
 		<?php foreach ( $option['blocks'] as $block_id => $block ): ?>
 			<?php $elements = ( ! empty( $block['elements'] ) ) ? $block['elements'] : array(); ?>
 			<div class="fw-options-tab" id="fw-options-tab-<?php echo esc_attr( $block_id ); ?>"
-			     data-block="<?php echo esc_attr( $block_id ); ?>">
+				 data-block="<?php echo esc_attr( $block_id ); ?>">
 				<?php
 				// Render before options
 				if ( ! empty( $block['before'] ) ):

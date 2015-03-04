@@ -80,7 +80,7 @@ body.rtl .fw-option-type-style .fw-options-tabs-first-level.fw-option-type-style
 
 .fw-option-type-style .fw-options-tabs-first-level.fw-option-type-style-settings > .fw-options-tabs-list ul li.ui-state-active a.nav-tab,
 .fw-option-type-style .fw-options-tabs-first-level.fw-option-type-style-settings > .fw-options-tabs-list ul li.ui-state-focus a.nav-tab {
-    background-color: #ffffff;
+	background-color: #ffffff;
 }
 
 .fw-option-type-style .settings,
@@ -145,7 +145,7 @@ body.rtl .fw-option-type-style .fw-option-type-style-settings-tabs.fw-options-ta
 }
 
 .fw-option-type-style .preview-block {
-    border-top: 1px solid #ccc;
+	border-top: 1px solid #ccc;
 }
 
 .fw-option-type-style .preview-block:first-child {
@@ -259,7 +259,7 @@ body.rtl .fw-option-type-style .style-preview .jspVerticalBar {
 }
 
 .fw-option-type-style .fw-inner-option {
-    max-width: 428px;
+	max-width: 428px;
 }
 
 .fw-option-type-style .predefined_styles .fw-option-type-image-picker ul.thumbnails.image_picker_selector li {

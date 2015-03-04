@@ -12,7 +12,7 @@
 	<ul class="list-style" data-blocks='<?php echo json_encode( $options['blocks'] ); ?>'>
 		<?php foreach ( $options['predefined'] as $key => $style ) : ?>
 			<li><a data-key="<?php echo $key; ?>" data-settings='<?php echo json_encode( $style ) ?>'
-			       href="#"><?php echo $style['name']; ?></a></li>
+				   href="#"><?php echo $style['name']; ?></a></li>
 		<?php endforeach; ?>
 	</ul>
 	<a href="#" class="open-close-panel"><i class="fa-sliders"></i></a>
