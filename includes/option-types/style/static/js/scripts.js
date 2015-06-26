@@ -140,7 +140,18 @@
 
 			//Family
 			$typography.off('change', 'select[data-type="family"]', fwOptionTypeStylePreview.fireTypographyChange);
-			$familyElement[0].selectize.setValue(data.family);
+
+			var selectize = $familyElement[0].selectize;
+			var selectedValue = selectize.getValue();
+			selectize.removeOption(selectedValue, true);
+
+			selectize.addOption({
+				value: data.family,
+				text: data.family
+			});
+
+			selectize.setValue(data.family, true);
+
 			$typography.on('change', 'select[data-type="family"]', fwOptionTypeStylePreview.fireTypographyChange);
 
 			var html = '';
