@@ -11,7 +11,7 @@
 	<h2 class="title-panel"><?php echo $description; ?></h2>
 	<ul class="list-style" data-blocks='<?php echo json_encode( $options['blocks'] ); ?>'>
 		<?php foreach ( $options['predefined'] as $key => $style ) : ?>
-			<li><a data-key="<?php echo $key; ?>" data-settings='<?php echo json_encode( $style ) ?>'
+			<li><a data-key="<?php echo esc_attr($key); ?>" data-settings="<?php echo fw_htmlspecialchars(json_encode( $style )) ?>"
 				   href="#"><?php echo $style['name']; ?></a></li>
 		<?php endforeach; ?>
 	</ul>

@@ -14,7 +14,7 @@
 				continue;
 			} ?>
 			<div class="preview-block">
-				<div class="<?php echo $key; ?>">
+				<div class="<?php echo esc_attr($key); ?>">
 					<?php for ( $i = 1; $i <= 6; $i ++ ) :
 						if ( ! in_array( 'h' . $i, $block['elements'] ) ) {
 							continue;

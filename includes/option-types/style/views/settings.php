@@ -77,7 +77,7 @@
 
 				// Links
 				foreach ( array_intersect( array_values( $elements ), array_keys( $settings['links'] ) ) as $link ): ?>
-					<div class="fw-option-type-style-option link <?php echo esc_attr($link); ?>" data-css-selector="<?php echo $link; ?>">
+					<div class="fw-option-type-style-option link <?php echo esc_attr($link); ?>" data-css-selector="<?php echo esc_attr($link); ?>">
 						<?php
 						$tmp_options = array(
 							$link => array(
