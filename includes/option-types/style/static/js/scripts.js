@@ -416,7 +416,7 @@
 			if (fw_typography_fonts['google'].hasOwnProperty(settings.family) && $.inArray(settings.family,
 					fwOptionTypeStylePreview.loadedGoogleFonts) === -1) {
 				var variants = fw_typography_fonts['google'][settings.family]['variants'].join(',');
-				$('head').append('<link href="http://fonts.googleapis.com/css?family=' + settings.family.split(' ').join('+') + ':' + variants + '" rel="stylesheet" type="text/css">');
+				$('head').append('<link href="https://fonts.googleapis.com/css?family=' + settings.family.split(' ').join('+') + ':' + variants + '" rel="stylesheet" type="text/css">');
 				fwOptionTypeStylePreview.loadedGoogleFonts.push(settings.family);
 			}
 

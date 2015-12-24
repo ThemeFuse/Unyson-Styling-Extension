@@ -78,7 +78,7 @@
 					if (fwGoogleFonts.hasOwnProperty(options['family']) && $.inArray(options['family'],
 							loadedGoogleFonts) === -1) {
 						variants = fwGoogleFonts[options['family']]['variants'].join(',');
-						$('head').append('<link href="http://fonts.googleapis.com/css?family=' + options['family'].split(' ').join('+') + ':' + variants + '" rel="stylesheet" type="text/css">');
+						$('head').append('<link href="https://fonts.googleapis.com/css?family=' + options['family'].split(' ').join('+') + ':' + variants + '" rel="stylesheet" type="text/css">');
 						loadedGoogleFonts.push(options['family']);
 					}
 					css += 'font-family: ' + options['family'];

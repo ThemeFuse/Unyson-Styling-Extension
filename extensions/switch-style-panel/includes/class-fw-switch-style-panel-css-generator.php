@@ -175,7 +175,7 @@ class FW_Switch_Style_Panel_Css_Generator {
 			return '';
 		}
 
-		$html = "<link href='http://fonts.googleapis.com/css?family=";
+		$html = "<link href='https://fonts.googleapis.com/css?family=";
 
 		foreach ( self::$remote_fonts as $font => $styles ) {
 			$html .= str_replace( ' ', '+', $font ) . ':' . implode( ',', $styles ) . '|';
