@@ -31,6 +31,11 @@ class FW_Extension_Styling extends FW_Extension {
 			}
 		}
 
+		add_action('fw_option_types_init', array($this, '_action_option_types_init'));
+	}
+
+	public function _action_option_types_init() {
+		require_once dirname( __FILE__ ) . '/includes/option-types/style/class-fw-option-type-style.php';
 	}
 
 	/**
